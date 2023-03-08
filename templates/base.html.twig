@@ -11,13 +11,16 @@
     {% endblock %}
 </head>
 <body>
-<div class="container">
+{#    <img class="absolute h-96 w-auto min-w-full" src="{{ asset('build/img/3resize.png') }}" alt="img">#}
+{#    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="absolute min-w-full">#}
+{#        <image  x="0" y="0" width="136" height="23" xlink:href="{{ asset('build/img/3resize.png') }}" />#}
+{#    </svg>#}
+    {{ include ('header/header.html.twig') }}
+    {{ include ('blocks/since_2018.html.twig') }}
+    {{ include ('blocks/services.html.twig') }}
 
-{{ include ('header/header.html.twig') }}
 
-
-{{ include ('footer/footer.html.twig') }}
-</div>
+    {{ include ('footer/footer.html.twig') }}
 
 </body>
 </html>
